@@ -1,0 +1,695 @@
+{
+ "generatedAt": "2026-10-18T00:38:59.766Z",
+ "target": "http://127.0.0.1:3000",
+ "browserChannel": "chrome（系统 Chrome，headless，deviceScaleFactor 2）",
+ "browserVersion": "155.0.8059.84",
+ "driverVersion": "Playwright 1.64.1（外部安装，非仓库依赖）",
+ "nodeVersion": "v24.10.0",
+ "states": 15,
+ "passed": 15,
+ "failed": 0,
+ "occlusionRule": "每个可见按钮中心点执行 document.elementFromPoint 命中测试；命中元素必须为该按钮本身或其祖先/后代。浮层打开时被浮层正常覆盖的底层按钮单列 buttonsCoveredByModal（预期，不算失败），浮层内按钮与无浮层状态的全部按钮必须命中自身",
+ "textRule": "每个状态另按 EXPECT_TEXT 断言页面 body 可见文案必须包含验收合同要求的反馈文本（列表起售价、售罄/截止禁用提示、超量夹紧提示、登录与订单摘要、失败重试），命中情况逐条记录在 textAssertions",
+ "consoleErrors": [
+  {
+   "state": "01-list-active-390.png",
+   "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+   "state": "10-list-error-390.png",
+   "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  }
+ ],
+ "results": [
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/01-list-active-390.png",
+   "title": "列表·进行中",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 4,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 4,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "拼团广场",
+     "found": true
+    },
+    {
+     "expect": "现摘红颜草莓 精品果礼盒",
+     "found": true
+    },
+    {
+     "expect": "起售价 ¥19.90",
+     "found": true
+    },
+    {
+     "expect": "成团门槛 10 件",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 4,
+   "visibleTextLength": 206,
+   "visibleText": "哇 拼团哇 BUYER / B01 拼团广场 挑选正在进行的拼团，选好规格就能参团。 进行中 已结束 进行中 发布于 2026-10-17 20:26 仙居东魁杨梅 冷链次日达 起售价 ¥39.90 · 成团门槛 5 件 已支付 0 / 5 件 查看详情 进行中 发布于 2026-10-17 20:26 现摘红颜草莓 精品果礼盒 起售价 ¥19.90 · 成团门槛 10 件 已支付 0 / 10 件 查看详情",
+   "bytes": 122073,
+   "sha256": "2f56dacff99a69a04672f6e21a74e5c30f21692cd3842f55acda2054db9744b9",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/02-list-ended-390.png",
+   "title": "列表·已结束",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 3,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 3,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "已结束",
+     "found": true
+    },
+    {
+     "expect": "阳光玫瑰青提 纯甜无籽礼盒",
+     "found": true
+    },
+    {
+     "expect": "起售价 ¥68.00",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 3,
+   "visibleTextLength": 130,
+   "visibleText": "哇 拼团哇 BUYER / B01 拼团广场 挑选正在进行的拼团，选好规格就能参团。 进行中 已结束 已结束 发布于 2026-10-17 20:26 阳光玫瑰青提 纯甜无籽礼盒 起售价 ¥68.00 · 成团门槛 20 件 已支付 0 / 20 件 查看详情",
+   "bytes": 82650,
+   "sha256": "cb6fe2880678f4953ea081b27e4cb96ef11556eba3801b76ff2b3b7b81a3e7c3",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/03-detail-ended-390.png",
+   "title": "详情·已结束",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 2,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "本团已截止，仅可查看结果。",
+     "found": true
+    },
+    {
+     "expect": "已截止，无法参团",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 2,
+   "visibleTextLength": 244,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 阳光玫瑰青提 纯甜无籽礼盒 已结束 云南建水阳光玫瑰，自然熟无籽，糖度 18 度以上。剪粒串装，送人有面子。本团已截止，仅展示历史信息。 成团进度 0% 已支付 0 / 20 件 精品单串 2斤 ¥68.00 · 库存 30 件 家庭双串 4斤 ¥128.00 · 库存 12 件 最低成团 20 件 截止时间 2026-10-17 20:29 预计发货 2026-10-18 20:26 本团已截止，仅可查看结果。 已截止，无法参团",
+   "bytes": 150950,
+   "sha256": "3bfedf2e8b7748ae108d140a96a24b6ea096a643010e3c28d1ac9ec82c906bcf",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/04-detail-active-390.png",
+   "title": "详情·进行中",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 2,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "成团进度",
+     "found": true
+    },
+    {
+     "expect": "尝鲜装 250g ¥19.90 · 库存 50 件",
+     "found": true
+    },
+    {
+     "expect": "囤货装 1kg ¥88.00 · 库存 8 件",
+     "found": true
+    },
+    {
+     "expect": "选择规格",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 4,
+   "visibleTextLength": 268,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格",
+   "bytes": 153160,
+   "sha256": "7510776c68f11c8e0701f49a6debe32b096686a3ec6486e8eb92cc9cf7973b15",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/05-spec-sheet-390.png",
+   "title": "规格浮层·已选数量",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": true,
+   "buttonCount": 10,
+   "dialogButtonCount": 8,
+   "hitTestedCount": 8,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [
+    {
+     "name": "‹ 返回拼团广场",
+     "point": [
+      57,
+      122
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-backdrop",
+      "text": "选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存",
+      "inDialog": true
+     }
+    },
+    {
+     "name": "选择规格",
+     "point": [
+      195,
+      812
+     ],
+     "coveredBy": {
+      "tag": "strong",
+      "cls": "",
+      "text": "合计 ¥84.80",
+      "inDialog": true
+     }
+    }
+   ],
+   "textAssertions": [
+    {
+     "expect": "选择规格",
+     "found": true
+    },
+    {
+     "expect": "共 3 件",
+     "found": true
+    },
+    {
+     "expect": "合计 ¥84.80",
+     "found": true
+    },
+    {
+     "expect": "确认选择",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 4,
+   "visibleTextLength": 397,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格 选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存 50 件 − + 家庭装 500g ¥45.00 · 库存 20 件 − + 囤货装 1kg ¥88.00 · 库存 8 件 − + 共 3 件 合计 ¥84.80 确认选择",
+   "bytes": 106989,
+   "sha256": "c0f5616b9e847104f942d32fb7cb2c212b37799a0430bf443924e4bb55120958",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/06-spec-over-quantity-390.png",
+   "title": "规格浮层·超量提示",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": true,
+   "buttonCount": 10,
+   "dialogButtonCount": 8,
+   "hitTestedCount": 8,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [
+    {
+     "name": "‹ 返回拼团广场",
+     "point": [
+      57,
+      122
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-backdrop",
+      "text": "选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存",
+      "inDialog": true
+     }
+    },
+    {
+     "name": "选择规格",
+     "point": [
+      195,
+      812
+     ],
+     "coveredBy": {
+      "tag": "strong",
+      "cls": "",
+      "text": "合计 ¥704.00",
+      "inDialog": true
+     }
+    }
+   ],
+   "textAssertions": [
+    {
+     "expect": "可售 8 件",
+     "found": true
+    },
+    {
+     "expect": "已按上限调整数量",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 2,
+   "visibleTextLength": 424,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格 选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存 50 件 − + 家庭装 500g ¥45.00 · 库存 20 件 − + 囤货装 1kg ¥88.00 · 库存 8 件 − + 「囤货装 1kg」可售 8 件，已按上限调整数量。 共 8 件 合计 ¥704.00 确认选择",
+   "bytes": 102838,
+   "sha256": "af1549e8443a5c1e5139690560a6895b59a88f96f571fe28e9e99c357912b3a4",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/07-login-sheet-390.png",
+   "title": "登录并继续（未登录点确认选择）",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": true,
+   "buttonCount": 5,
+   "dialogButtonCount": 3,
+   "hitTestedCount": 3,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [
+    {
+     "name": "‹ 返回拼团广场",
+     "point": [
+      57,
+      122
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-backdrop",
+      "text": "登录并继续 × 为保存你的订单，请先登录。 现摘红颜草莓 精品果礼盒 已选 2 ",
+      "inDialog": true
+     }
+    },
+    {
+     "name": "选择规格",
+     "point": [
+      195,
+      812
+     ],
+     "coveredBy": {
+      "tag": "button",
+      "cls": "button secondary",
+      "text": "暂不登录",
+      "inDialog": true
+     }
+    }
+   ],
+   "textAssertions": [
+    {
+     "expect": "登录并继续",
+     "found": true
+    },
+    {
+     "expect": "为保存你的订单，请先登录。",
+     "found": true
+    },
+    {
+     "expect": "已选 2 件 · 合计 ¥39.80",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 3,
+   "visibleTextLength": 333,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格 登录并继续 × 为保存你的订单，请先登录。 现摘红颜草莓 精品果礼盒 已选 2 件 · 合计 ¥39.80 暂不登录 登录并继续",
+   "bytes": 129513,
+   "sha256": "8a24905f0af69cc1b84bca0facfc26d982df55296de4e457fc8d76d89841a8f5",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/08-order-summary-390.png",
+   "title": "确认订单（登录后）",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": true,
+   "buttonCount": 4,
+   "dialogButtonCount": 2,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [
+    {
+     "name": "‹ 返回拼团广场",
+     "point": [
+      57,
+      122
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-backdrop",
+      "text": "确认订单 × 已为你保留所选规格，下单流程在下一阶段开放。 尝鲜装 250g ×",
+      "inDialog": true
+     }
+    },
+    {
+     "name": "选择规格",
+     "point": [
+      195,
+      812
+     ],
+     "coveredBy": {
+      "tag": "strong",
+      "cls": "",
+      "text": "合计 ¥39.80",
+      "inDialog": true
+     }
+    }
+   ],
+   "textAssertions": [
+    {
+     "expect": "确认订单",
+     "found": true
+    },
+    {
+     "expect": "尝鲜装 250g × 2",
+     "found": true
+    },
+    {
+     "expect": "¥39.80",
+     "found": true
+    },
+    {
+     "expect": "下单流程在下一阶段开放",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 4,
+   "visibleTextLength": 345,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格 确认订单 × 已为你保留所选规格，下单流程在下一阶段开放。 尝鲜装 250g × 2 ¥39.80 共 2 件 合计 ¥39.80 下单（下一阶段开放）",
+   "bytes": 125049,
+   "sha256": "c7157fa1aa3bd9807119106922d3854866dde2dd89a89ce8ed1cb2916f1d29b1",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/09-detail-soldout-390.png",
+   "title": "详情·暂时售罄",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 2,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "暂时售罄",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 1,
+   "visibleTextLength": 247,
+   "visibleText": "哇 拼团哇 ‹ 返回拼团广场 BUYER / B02 仙居东魁杨梅 冷链次日达 进行中 浙江仙居东魁杨梅，单果 15g 以上，真空冰袋冷链，江浙沪次日达。杨梅季短，售完即止。 成团进度 0% 已支付 0 / 5 件 · 还差 5 件成团 标准装 1.5kg ¥39.90 · 库存 0 件 大果装 3kg ¥59.90 · 库存 0 件 最低成团 5 件 截止时间 2026-10-19 20:26 预计发货 2026-10-20 20:26 暂时售罄，库存释放且未截止后可恢复下单。 暂时售罄",
+   "bytes": 150513,
+   "sha256": "32d9a13502426f5096a17c1a1e1d3341dd4c816d52bb0deea5c3a2b007a256ca",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/10-list-error-390.png",
+   "title": "列表·接口失败态",
+   "viewport": "390x844@2x",
+   "innerWidth": 390,
+   "innerHeight": 844,
+   "scrollWidth": 390,
+   "clientWidth": 390,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 3,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 3,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "暂时无法加载",
+     "found": true
+    },
+    {
+     "expect": "重新加载",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 2,
+   "visibleTextLength": 71,
+   "visibleText": "哇 拼团哇 BUYER / B01 拼团广场 挑选正在进行的拼团，选好规格就能参团。 进行中 已结束 ! 暂时无法加载 注入的失败态 重新加载",
+   "bytes": 54642,
+   "sha256": "9506d3421f128095b2e0006cc8514a6b9e4ac58bc783456aeefc542d5a12dee4",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/11-list-active-1440.png",
+   "title": "列表·进行中（桌面）",
+   "viewport": "1440x900@2x",
+   "innerWidth": 1440,
+   "innerHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 4,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 4,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "拼团广场",
+     "found": true
+    },
+    {
+     "expect": "现摘红颜草莓 精品果礼盒",
+     "found": true
+    },
+    {
+     "expect": "起售价 ¥19.90",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 3,
+   "visibleTextLength": 211,
+   "visibleText": "哇 拼团哇 拼团广场 BUYER / B01 拼团广场 挑选正在进行的拼团，选好规格就能参团。 进行中 已结束 进行中 发布于 2026-10-17 20:26 仙居东魁杨梅 冷链次日达 起售价 ¥39.90 · 成团门槛 5 件 已支付 0 / 5 件 查看详情 进行中 发布于 2026-10-17 20:26 现摘红颜草莓 精品果礼盒 起售价 ¥19.90 · 成团门槛 10 件 已支付 0 / 10 件 查看详情",
+   "bytes": 159097,
+   "sha256": "e9a6065ecb59e4d144df9327b86f14b5673919440baf91839ab98badc3dc2c9c",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/12-detail-active-1440.png",
+   "title": "详情·进行中（桌面）",
+   "viewport": "1440x900@2x",
+   "innerWidth": 1440,
+   "innerHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 2,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "成团进度",
+     "found": true
+    },
+    {
+     "expect": "选择规格",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 2,
+   "visibleTextLength": 273,
+   "visibleText": "哇 拼团哇 拼团广场 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格",
+   "bytes": 268132,
+   "sha256": "4f5b042c6f811cc47d72282a950332c57406f4ed618370b3faa1e0e32847bab6",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/13-spec-sheet-1440.png",
+   "title": "规格浮层（桌面）",
+   "viewport": "1440x900@2x",
+   "innerWidth": 1440,
+   "innerHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "overflowX": 0,
+   "hasDialog": true,
+   "buttonCount": 10,
+   "dialogButtonCount": 8,
+   "hitTestedCount": 8,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [
+    {
+     "name": "‹ 返回拼团广场",
+     "point": [
+      235,
+      156
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-backdrop",
+      "text": "选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存",
+      "inDialog": true
+     }
+    },
+    {
+     "name": "选择规格",
+     "point": [
+      720,
+      867
+     ],
+     "coveredBy": {
+      "tag": "div",
+      "cls": "sheet-footer",
+      "text": "共 1 件 合计 ¥19.90 确认选择",
+      "inDialog": true
+     }
+    }
+   ],
+   "textAssertions": [
+    {
+     "expect": "选择规格",
+     "found": true
+    },
+    {
+     "expect": "共 1 件",
+     "found": true
+    },
+    {
+     "expect": "合计 ¥19.90",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 3,
+   "visibleTextLength": 402,
+   "visibleText": "哇 拼团哇 拼团广场 ‹ 返回拼团广场 BUYER / B02 现摘红颜草莓 精品果礼盒 进行中 凌晨采摘的丹东红颜草莓，单果 25g 以上，泡沫箱加冰袋顺丰冷链。坏果包赔，签收 24 小时内拍照反馈即刻赔付。 成团进度 0% 已支付 0 / 10 件 · 还差 10 件成团 尝鲜装 250g ¥19.90 · 库存 50 件 家庭装 500g ¥45.00 · 库存 20 件 囤货装 1kg ¥88.00 · 库存 8 件 最低成团 10 件 截止时间 2026-10-18 20:26 预计发货 2026-10-19 20:26 选择规格 选择规格 × 现摘红颜草莓 精品果礼盒 尝鲜装 250g ¥19.90 · 库存 50 件 − + 家庭装 500g ¥45.00 · 库存 20 件 − + 囤货装 1kg ¥88.00 · 库存 8 件 − + 共 1 件 合计 ¥19.90 确认选择",
+   "bytes": 246683,
+   "sha256": "03048d964cf67220c8f63baa838fb0b3e727fa08fae4802c01366b042569c280",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/14-list-ended-1440.png",
+   "title": "列表·已结束（桌面）",
+   "viewport": "1440x900@2x",
+   "innerWidth": 1440,
+   "innerHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 3,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 3,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "阳光玫瑰青提 纯甜无籽礼盒",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 1,
+   "visibleTextLength": 135,
+   "visibleText": "哇 拼团哇 拼团广场 BUYER / B01 拼团广场 挑选正在进行的拼团，选好规格就能参团。 进行中 已结束 已结束 发布于 2026-10-17 20:26 阳光玫瑰青提 纯甜无籽礼盒 起售价 ¥68.00 · 成团门槛 20 件 已支付 0 / 20 件 查看详情",
+   "bytes": 111376,
+   "sha256": "6d54d990f30f541c2448ce894fe8cbe4e4fd3f3cfeea41cdccb7354c2e81ecbb",
+   "pass": true
+  },
+  {
+   "screenshot": "docs/evidence/task-03-screenshots/15-detail-ended-1440.png",
+   "title": "详情·已结束（桌面）",
+   "viewport": "1440x900@2x",
+   "innerWidth": 1440,
+   "innerHeight": 900,
+   "scrollWidth": 1440,
+   "clientWidth": 1440,
+   "overflowX": 0,
+   "hasDialog": false,
+   "buttonCount": 2,
+   "dialogButtonCount": 0,
+   "hitTestedCount": 2,
+   "buttonsOutOfViewport": [],
+   "buttonsOccluded": [],
+   "buttonsCoveredByModal": [],
+   "textAssertions": [
+    {
+     "expect": "本团已截止，仅可查看结果。",
+     "found": true
+    },
+    {
+     "expect": "已截止，无法参团",
+     "found": true
+    }
+   ],
+   "textAssertionsPassed": 2,
+   "visibleTextLength": 249,
+   "visibleText": "哇 拼团哇 拼团广场 ‹ 返回拼团广场 BUYER / B02 阳光玫瑰青提 纯甜无籽礼盒 已结束 云南建水阳光玫瑰，自然熟无籽，糖度 18 度以上。剪粒串装，送人有面子。本团已截止，仅展示历史信息。 成团进度 0% 已支付 0 / 20 件 精品单串 2斤 ¥68.00 · 库存 30 件 家庭双串 4斤 ¥128.00 · 库存 12 件 最低成团 20 件 截止时间 2026-10-17 20:29 预计发货 2026-10-18 20:26 本团已截止，仅可查看结果。 已截止，无法参团",
+   "bytes": 268612,
+   "sha256": "78b30148b80de211cdc40cdb02d3b7806d651f4a0a59f7d6bf7a9e98dfeef20e",
+   "pass": true
+  }
+ ]
+}
