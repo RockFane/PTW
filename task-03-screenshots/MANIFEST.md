@@ -8,7 +8,7 @@
 - 分支远端 tip 实测：`88b5a5a17b4ae3ac2b87a1e8f580d2960b284eca`（`git ls-remote` 于本次交付前复测）
 - 三者的 `packages/` 子树 OID 相同：`99555a2a0422d2661cc5bee31a6d3803a2dc69a8`（业务源码同一性，见 COMMIT-MAPPING.md）
 
- 字节 | sha256 | 与登记值 | 源仓库 git blob | 本仓库副本 |
+| 文件 | 字节 | sha256 | 与登记值 | 源仓库 git blob | 本仓库副本 |
 |---|---|---|---|---|---|
 | `01-list-active-390.png` | 122376 | `fb52b4d38a987bc9269cb869e782cf30720ee45f2ba9444e4d7de0e824d03eb8` | 一致（layout-raw 登记行） | `54e4391ec6485b9ebd5f63038a0198655b08df89` | 已同步 |
 | `02-list-ended-390.png` | 82773 | `9c037ce587b4f1cebe204509c5fa4c02118d0c6acb617a9bafc7f6327b29423e` | 一致（layout-raw 登记行） | `d341ed157a58eb5a623f2490003c9289acc5e4b6` | 已同步 |
@@ -26,7 +26,7 @@
 | `14-list-ended-1440.png` | 111485 | `38f0002e9976853120e5d2beed6abdfae35ce4707f681b176a7ec91286e4d98d` | 一致（layout-raw 登记行） | `e2e6c5d5d30b9c8c90cd429034b6bae71d00ee2a` | 已同步 |
 | `15-detail-ended-1440.png` | 268612 | `78b30148b80de211cdc40cdb02d3b7806d651f4a0a59f7d6bf7a9e98dfeef20e` | 一致（layout-raw 登记行） | `df5f3d82cf7d437540aee90183a9946d8b56da83` | 已同步 |
 | `layout-report.json` | 24645 | `40659c05a30c14565d2f2cf22fb0e6f30071bbbbffe45226e6caf99b6b352fe7` | 一致（主报告逐字节相同镜像） | `5a227c2b0d7bead3f6d24ec035a80ff1f1214edb` | 已同步 |
-（本公开仓库内）
+## 本公开仓库内可点击路径
 
 - `task-03-screenshots/01-list-active-390.png`
 - `task-03-screenshots/02-list-ended-390.png`
