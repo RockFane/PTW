@@ -59,4 +59,7 @@ git cat-file -p <候选 tree OID>
 git merge-base --is-ancestor <上表每个提交> 88b5a5a17b4ae3ac2b87a1e8f580d2960b284eca && echo reachable
 ```
 
-无需私有仓库权限即可执行的本仓库核对：`sha256sum task-03-screenshots/*.png`（或 Windows `certutil -hashfile <png> SHA256`），结果应与 `task-03-screenshots/MANIFEST.md` 表格逐张全等，且这些哈希值本身已登记在平台已审候选的 `docs/evidence/task-03-layout-raw.txt` 中。
+无需私有仓库权限即可执行的本仓库核对：`sha256sum task-03-screenshots/*.png task-03-screenshots/layout-report.json`（或 Windows `certutil -hashfile <文件> SHA256`），结果应与 `task-03-screenshots/MANIFEST.md` 表格逐张全等（16 个文件），且这些哈希值本身已登记在平台已审候选的 `docs/evidence/task-03-layout-raw.txt` 中。
+
+- 仓库根已放 `.gitattributes`，对这 16 个证据文件关闭 EOL 转换。**这条是必要的**：不加时，在 `core.autocrlf=true` 的 Windows 上克隆会把 `layout-report.json` 检出成 25336 字节（`cf51c73d…`），与登记值 24645 字节（`40659c05…`）不符，看起来像证据被改动，实际只是行尾转换。加上后，任何平台、任何 autocrlf 设置下检出的字节都与登记哈希全等；本人已在 `core.autocrlf=true` 的克隆上复测通过。
+- 直接按链接读 GitHub 上的原始文件（raw / blob 视图下载）拿到的是仓库内 blob，本来就不经行尾转换，结果同样全等。
